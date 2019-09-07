@@ -1,0 +1,55 @@
+#gradv{
+    background:radial-gradient(#DFFAEE, #A9D7C3, #6DC19C);
+    height: 50px;
+    width: 50px;
+    font-family:serif;
+}
+#gradA{
+    background:radial-gradient(#DDF8FF, #A9D9E5, #6CAFBF);
+    height: 50px;
+    width: 50px;
+    font-family:serif;
+}
+
+#gradR{
+    background:radial-gradient(#FFD9D8, #F98E8B, #F9635E);
+    height: 50px;
+    width: 50px;
+    font-family:serif;
+}
+#gradRo{
+    background:radial-gradient(#F9E6EB, #F1B5C3, #F97EA7);
+    height: 50px;
+    width: 50px;
+    font-family:serif;
+}
+#fontAzul{
+        font-size: 26px;
+        font-style: normal;
+        color: blue;  
+}
+#fontRojo{
+        font-size: 26px;
+        font-style: normal;
+        color: red;  
+}
+#fontTrans{
+        font-size: 26px;
+        font-style: normal;
+        color: #FFFFFF;  
+        -webkit-text-stroke: 0.7px black;
+}
+pre{
+   font-weight: bold;
+   border-color: black;
+}
+#titulo {
+  background: linear-gradient(darkblue,#6CAFBF,#6DC19C );
+  -webkit-background-clip: text;
+  color: transparent;  
+  font-size:60px;
+   font-weight: bold;
+}
+td{
+   border-radius: 5px;
+}

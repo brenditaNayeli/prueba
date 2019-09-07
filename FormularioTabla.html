@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Página web con Formularios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/EstilosFormulario.css" rel="stylesheet"/> 
+    </head>
+    <body>
+        <h1 align="center">Aplicación con uso de formularios</h1>
+        <form action="#" method="POST">
+            <table border="1px" bordercolor="black" width="1300" height="500" align="center">
+                <tr>
+                    <td><label>Clave</label></td>
+                    <td><input type="text" id="clave" name="clave" value="1" readonly="on"/></td>
+                    <td><label>Seleccione el género</label></td>
+                    <td><fieldset>
+                            <legend>Sexo</legend>
+                            <input type="radio" value="femenino" id="genero" name="genero" required/> <label>Femenino</label>
+                            <input type="radio" value="masculino" id="genero" name="genero" required/> <label>Masculino</label>
+                        </fieldset></td>   
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Ingrese su password" autofocus="on"/></td>
+
+                    <td><label>Seleccione la carrera</label></td>
+                    <td><select>
+                            <option value="II">Ingeniería en Informática</option>
+                            <option value="ISC">Ingeniería en Sistemas Computacionales</option>
+                            <option value="ADMN">Licenciatura en Administración</option>
+                            <option value="INGIND">Ingeniería Industrial</option>
+                            <option value="INGELEC">Ingeniería Electromécanica</option>
+                            <option value="IC" selected>Ingeniería Civil</option>
+                            <option value="IGE">Ingeniería en Gestión Empresarial</option>
+                            <option value="INGIA">Ingeniería en Industrias Alimentarias</option>
+                            <option value="CP">Contador Público</option>
+                            <option value="ARQ">Arquitectura</option>
+                        </select></td>
+
+                </tr>
+                <tr>
+                    <td> <label>Nombre</label></td>
+                    <td> <input type="text" id="nombre" name="nombre" required placeholder="Digite su nombre" autocomplete="off" autofocus="off" size=30 /></td>
+
+                    <td><label>Semana laboral</label></td>
+                    <td><select multiple size="7">
+                            <option value="lunes">Lunes</option>
+                            <option value="martes">Martes</option>
+                            <option value="miercoles">Miércoles</option>
+                            <option value="jueves">Jueves</option>
+                            <option value="viernes">Viernes</option>
+                            <option value="sabado">Sábado</option>
+                            <option value="domingo">Domingo</option>
+                        </select></td>
+
+                </tr>
+                <tr>
+                    <td><label>Apellido Paterno</label></td>
+                    <td> <input type="text" id="paterno" name="paterno" required placeholder="Digite su apellido paterno"/></td>
+
+                    <td><label>Hobbies</label></td>
+                    <td> <input type="checkbox" name="leer" id="leer"/><label> Leer libros</label>
+                        <input type="checkbox" name="jugar" id="jugar"/><label>Jugar vídeojuegos</label>
+                        <input type="checkbox" name="bailar" id="bailar"/><label>Salir a bailar</label>
+                        <input type="checkbox" name="deporte" id="deporte"/><label>Jugar futbol</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>Apellido Materno</label></td>
+                    <td><input type="text" id="materno" name="materno" required placeholder="Digite su apellido materno"/></td>
+                    
+                    <td><label>Fecha de nacimiento</label></td>
+                    <td><input type="date" name="fechanacimiento" id="fechanacimiento" required min="1900-01-01" max="2018-12-31"/></td>
+                </tr>
+                <tr>
+                    <td><label>Edad</label></td>
+                    <td><input type="number" id="edad" name="edad" required placeholder="Digite su edad" min="18" max="70"/></td>
+
+                    <td> <label>Introduzca un email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Digite su email" pattern="[a-zA-Z0-9]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/></td>
+                </tr>
+                <tr>
+                    <td> <label>Teléfono</label></td>
+                    <td><input type="tel" id="telefono" name="telefono" required placeholder="Digite su número de teléfono" pattern="[0-9]{10}"/>  </td>
+
+                    <td> <label>Comentarios</label></td>
+                    <td> <textarea name="comentario" rows=8 placeholder="Escriba aquí un comentario"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td> 
+                    <td><input type="submit"/> 
+                        <input type="reset"/>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
